@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  font-size: 14px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  font-weight: bold;
+}
+.btn-blue {
+  color: #ffffff;
+  background-color: #244B9C;
+  border-radius: 1.25rem;
+  border: 2px solid #244B9C;
+}
+.btn-blue:hover {
+  background-color: #3b6cd2;
+  color: #ffffff;
+  border: 2px solid #3b6cd2;
+}
+.btn-outline-blue {
+  color: #244B9C;
+  border: 2px solid #244B9C;
+  border-radius: 1.25rem;
+}
+.btn-outline-blue:hover {
+  background-color: #244B9C;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  border: none;
+  cursor: pointer;
+}
+.card p {
+  margin-bottom: 0;
+}
+.card:hover p {
+  color: #3b6cd2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headline {
+  width: 100%;
+}
+
+.bg-gradient {
+  background: #244b9c;
+}
+
+.text-orange {
+  color: #FCC43F;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.text-white {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.text-blue {
+  color: #244B9C;
+  font-weight: bold;
+}
+.text-blue-card {
+  font-weight: bold;
+  cursor: pointer;
+}
+.text-blue-card:hover {
+  color: #3b6cd2;
+}
+
+.line-white {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.fixed-menu {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.header-logo {
+  width: 30%;
+  padding: 1rem;
+}
+.header-banner {
+  width: 70%;
+  padding: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
+.menu-item a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=App.css.map */
