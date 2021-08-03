@@ -1,9 +1,13 @@
 import React from 'react';
+import { Navbar, Header, Menu } from '../Components'
+import '../App.css';
 
 function Home() {
   return (
     <div className='home'>
-      <h1>Home</h1>
+      <Navbar />
+      <Header />
+      <Menu />
     </div>
   );
 }
