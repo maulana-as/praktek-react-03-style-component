@@ -1,16 +1,17 @@
-import styled from "styled-components";
-import { Container } from '../Globalstyles'
+import styled from 'styled-components';
+import { Container } from '../Globalstyles';
 
 export const NavigationContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  position: sticky;
   ${Container};
-  
-  .menu-bars { 
-      margin-left: 10rem;
-      font-size: 1.2rem;
+
+  .menu-bars {
+    margin-left: 10rem;
+    font-size: 1.2rem;
   }
 
   .nav-menu {
@@ -30,13 +31,13 @@ export const NavigationContainer = styled(Container)`
     height: calc(100% - 46px);
     position: fixed;
     z-index: 1;
-    transition: .25s ease-in-out;
+    transition: 0.25s ease-in-out;
     padding: 0 0 20px 0;
     /* top: 46px; */
     /* width: 100%; */
     /* column-count: 2; Specify no. of columns */
   }
-  
+
   .nav-menu.active {
     left: 0;
     transition: 350ms;

@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { IconContext } from "react-icons";
-import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
-import { NavigationBar } from "../../Styles/NavigationBar";
-import { NavigationContainer } from "../../Styles/NavigationContainer";
-import { SidebarItem } from "./SidebarItem";
-import { StyledSearchBarContent } from "../../Styles/SearchBar";
-import { StyleLogin } from '../../Styles/StyleLogin'
-import { Button } from '../../Styles/Button'
-import { OutlineButton } from '../../Styles/OutlineButton'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { IconContext } from 'react-icons';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import { NavigationBar } from '../../Styles/NavigationBar';
+import { NavigationContainer } from '../../Styles/NavigationContainer';
+import { SidebarItem } from './SidebarItem';
+import { StyledSearchBarContent } from '../../Styles/SearchBar';
+import { StyleLogin } from '../../Styles/StyleLogin';
+import { Button } from '../../Styles/Button';
+import { OutlineButton } from '../../Styles/OutlineButton';
 
 function NavbarDetik() {
   const [sidebar, setSidebar] = useState(false);
@@ -17,15 +17,19 @@ function NavbarDetik() {
 
   return (
     <>
-      <IconContext.Provider value={{ color: "#000" }}>
+      <IconContext.Provider value={{ color: '#000' }}>
         <NavigationBar>
           <NavigationContainer>
             <div className="navbar">
               <Link to="#" className="menu-bars">
-                <FaIcons.FaBars className="fa-search"rs onClick={showSidebar} />
+                <FaIcons.FaBars
+                  className="fa-search"
+                  rs
+                  onClick={showSidebar}
+                />
               </Link>
             </div>
-            <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
+            <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
               <ul className="nav-menu-items" onClick={showSidebar}>
                 <li className="navbar-toggle">
                   <Link to="#" className="menu-bars">
@@ -46,11 +50,11 @@ function NavbarDetik() {
             </nav>
             <StyledSearchBarContent>
               <input type="text" placeholder="Cari Berita" />
-               {/* <FaIcons.FaSearch className="fa-search" /> */}
+              {/* <FaIcons.FaSearch className="fa-search" /> */}
             </StyledSearchBarContent>
-            <StyleLogin >
+            <StyleLogin>
               <Button>Daftar detikID</Button>
-              <OutlineButton style={{marginLeft: "5px"}}>Masuk</OutlineButton>
+              <OutlineButton style={{ marginLeft: '5px' }}>Masuk</OutlineButton>
             </StyleLogin>
           </NavigationContainer>
         </NavigationBar>
